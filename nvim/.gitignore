@@ -1,0 +1,18 @@
+tags
+test.sh
+.luarc.json
+nvim
+
+spell/
+lazy-lock.json
+
+# Generic temporary files
+*.swp
+*.swo
+.DS_Store
+
+# If you prefer NOT to sync specific plugin versions (optional)
+# lazy-lock.json 
+
+# User persistent data (if any exists in this folder)
+/shada/
