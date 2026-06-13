@@ -39,8 +39,8 @@ return {
       },
       text = {
         default = nil,
-        workspace = function()
-          return "In workspace"
+        workspace = function(opts)
+          return "In " .. opts.workspace
         end,
         viewing = function(opts)
           return "Viewing " .. opts.filename
@@ -95,7 +95,7 @@ return {
       hooks = {
         post_activity = function(opts, activity)
           local v = vim.version()
-          activity.assets.small_text = string.format("Neovim %d.%d.%d", v.major, v.minor, v.patch)
+          -- activity.assets.small_text = string.format("Neovim %d.%d.%d", v.major, v.minor, v.patch)
           activity.status_display_type = "details" -- 'name' | 'details' | 'state'
         end,
       },
